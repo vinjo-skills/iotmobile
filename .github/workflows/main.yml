@@ -14,7 +14,7 @@ jobs:
         with:
           java-version: "20"
           distribution: "adopt"
-          cache: gradle
+          cache: "gradle"
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v4
