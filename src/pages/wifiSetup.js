@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button } from "react-native";
 import { Picker } from "@react-native-picker/picker";
+import axios from "axios";
 
 export default function WifiSetup() {
   const [networks, setNetworks] = useState([]);
   const [selectedNetwork, setSelectedNetwork] = useState("");
   const [password, setPassword] = useState("");
-
   useEffect(() => {
-    // Fetch available networks from Pico
-    fetch("http://192.168.4.1/networks")
-      .then((res) => {
-        setNetworks(res.json());
-        console.log(res.json());
-      })
-      .then((data) => setNetworks(data))
-      .catch((err) => console.error("Error fetching networks:", err));
+    axios
+      .get("http://192.168.4.1/networks")
+      .then((response) => setNetworks(response.data))
+      .catch((err) => alert("please connect to vinjo network"));
   }, []);
 
   const sendCredentials = () => {
