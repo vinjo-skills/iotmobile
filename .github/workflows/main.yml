@@ -23,8 +23,6 @@ jobs:
 
       - name: 📦 Install dependencies
         run: npm install
-        working-directory: ./iotmobile
 
       - name: 🚀 Create build
-        working-directory: ./app
         run: eas build --non-interactive -p android --profile preview
