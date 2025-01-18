@@ -26,3 +26,4 @@ jobs:
 
       - name: 🚀 Create build
         run: eas build --non-interactive -p android --profile preview
+        working-directory: ./iotmobile
