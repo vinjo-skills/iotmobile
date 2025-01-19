@@ -16,15 +16,9 @@ export default function WifiSetup() {
 
   const sendCredentials = () => {
     const data = { ssid: selectedNetwork, password };
-    fetch("http://192.168.4.1/wifi", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.text())
-      .then((message) => alert(message))
+    axios
+      .post("http://192.168.4.1/wifi", data)
+      .then((res) => console.log(res.data))
       .catch((err) => console.error("Error sending credentials:", err));
   };
 
