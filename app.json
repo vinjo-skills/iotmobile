@@ -21,6 +21,11 @@
         "backgroundColor": "#ffffff"
       },
       "usesCleartextTraffic": true,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
       "package": "com.vinay01joshi.vinjo"
     },
     "web": {
