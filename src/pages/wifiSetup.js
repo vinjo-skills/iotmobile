@@ -10,7 +10,7 @@ import { Picker } from "@react-native-picker/picker";
 import axios from "axios";
 import { Divider, Button, Spinner } from "@ui-kitten/components";
 
-export default function WifiSetup() {
+export default function WifiSetup({ navigation, route }) {
   const [networks, setNetworks] = useState([]);
   const [selectedNetwork, setSelectedNetwork] = useState("");
   const [password, setPassword] = useState("");
@@ -86,6 +86,13 @@ export default function WifiSetup() {
             onPress={refreshNetworks}
           >
             Refresh
+          </Button>
+          <Button
+            status="warning"
+            appearance="outline"
+            onPress={() => navigation.navigate("Home")}
+          >
+            See All envents
           </Button>
         </View>
       </View>

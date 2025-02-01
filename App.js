@@ -12,6 +12,7 @@ export default function App() {
     return (
       <Stack.Navigator>
         <Stack.Screen name="Wifi" component={WifiSetup} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     );
   }

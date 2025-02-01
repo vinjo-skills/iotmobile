@@ -7,6 +7,7 @@ import {
   Text,
   Calendar,
   Spinner,
+  Button,
 } from "@ui-kitten/components";
 import axios from "axios";
 
@@ -14,7 +15,10 @@ const Home = () => {
   const [eventData, setEventData] = useState([]);
   const [date, setDate] = useState(new Date());
   const renderItem = ({ item, index }) => (
-    <ListItem title={`${index + 1} - ${item.Event}`} />
+    <ListItem
+      title={`An unidentified motion detected on your place`}
+      description={`On ${new Date(item.Event).toLocaleString()}`}
+    />
   );
 
   useEffect(() => {
@@ -32,13 +36,23 @@ const Home = () => {
   }, []);
   return (
     <View style={styles.container}>
-      <Text style={styles.text} category="h1">
-        All events
-      </Text>
-
-      <View>
-        <Calendar date={date} onSelect={(nextDate) => setDate(nextDate)} />
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: 20,
+        }}
+      >
+        <Text style={styles.text} category="h1">
+          All events
+        </Text>
+        <Button appearance="outline" status="warning">
+          Refresh
+        </Button>
       </View>
+
+      <Divider />
       <View style={styles.listContent}>
         <List
           data={eventData}
@@ -53,11 +67,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    flexDirection: "column",
-    alignContent: "center",
+  },
+  text: {
+    textAlign: "center",
+    marginVertical: 20,
   },
   listContent: {
-    height: 200,
+    alignContent: "center",
   },
 });
 export default Home;
