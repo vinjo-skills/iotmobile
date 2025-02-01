@@ -12,7 +12,7 @@ export default function App() {
   function RootStack() {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="WebView" component={WebViewPage} />
+        <Stack.Screen name="WebView" component={WifiSetup} />
       </Stack.Navigator>
     );
   }

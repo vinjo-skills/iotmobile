@@ -55,10 +55,8 @@ export default function WifiSetup() {
       .then((response) => response.json())
       .then((data) => {
         setFetchResponse(JSON.stringify(data));
-        console.log(data);
       })
       .catch((error) => {
-        console.error(error);
         setFetchResponse(JSON.stringify(error));
       });
   };
