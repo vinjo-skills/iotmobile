@@ -20,12 +20,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "usesCleartextTraffic": true,
       "package": "com.vinay01joshi.vinjo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["./plugins/withAndroidPermissions"],
+    "plugins": [
+      "./plugins/withNetworkSecurityConfig",
+      "./plugins/withAndroidPermissions.js"
+    ],
     "extra": {
       "eas": {
         "projectId": "5eaf9a74-eace-4191-9140-4a3f2de6cc31"
