@@ -21,16 +21,21 @@
         "backgroundColor": "#ffffff"
       },
       "usesCleartextTraffic": true,
-      "permissions": [
-        "android.permission.INTERNET",
-        "android.permission.ACCESS_WIFI_STATE",
-        "android.permission.ACCESS_NETWORK_STATE"
-      ],
       "package": "com.vinay01joshi.vinjo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "permissions": ["INTERNET"]
+          }
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "5eaf9a74-eace-4191-9140-4a3f2de6cc31"
