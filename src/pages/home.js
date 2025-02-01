@@ -1,12 +1,18 @@
 import { View, StyleSheet } from "react-native";
 import { useEffect, useState } from "react";
-import { Divider, List, ListItem, Text, Calendar } from "@ui-kitten/components";
+import {
+  Divider,
+  List,
+  ListItem,
+  Text,
+  Calendar,
+  Spinner,
+} from "@ui-kitten/components";
 import axios from "axios";
 
 const Home = () => {
   const [eventData, setEventData] = useState([]);
   const [date, setDate] = useState(new Date());
-
   const renderItem = ({ item, index }) => (
     <ListItem title={`${index + 1} - ${item.Event}`} />
   );

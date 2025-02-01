@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "86056388707",
+    "project_id": "named-standard-260708",
+    "storage_bucket": "named-standard-260708.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86056388707:android:54de30f999e26eb82b9056",
+        "android_client_info": {
+          "package_name": "com.vinay01joshi.vinjo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86056388707-f8v95mp27qk8vfnlp78ul3vn4tthajc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vinay01joshi.vinjo",
+            "certificate_hash": "4f46bedaa65c190e7861f2f9c39967b5e85bc8f6"
+          }
+        },
+        {
+          "client_id": "86056388707-qobnvn0dnc6ebe7ttilju5b83qkf754u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHn5rdknqK9zn_Kds-d0JEWqH8viICyjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86056388707-mhlpshuq86mp769hk7ld1b9v1ais6c69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86056388707:android:ce7ddfb93797af832b9056",
+        "android_client_info": {
+          "package_name": "in.vinjo.smartbat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86056388707-qobnvn0dnc6ebe7ttilju5b83qkf754u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHn5rdknqK9zn_Kds-d0JEWqH8viICyjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86056388707-mhlpshuq86mp769hk7ld1b9v1ais6c69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

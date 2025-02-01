@@ -6,13 +6,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as eva from "@eva-design/eva";
 import Home from "./src/pages/home";
 import WifiSetup from "./src/pages/wifiSetup";
-import WebViewPage from "./src/pages/webViewPage";
 const Stack = createNativeStackNavigator();
 export default function App() {
   function RootStack() {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="WebView" component={WifiSetup} />
+        <Stack.Screen name="Wifi" component={WifiSetup} />
       </Stack.Navigator>
     );
   }
